@@ -18,11 +18,8 @@
       <li><a href="#veiculo">3.3 <strong>Veiculos</strong></a></li>
     </ul>
   </li>
-  <li><a href="#contato">📑 <strong>Referências</strong></a></li>
+  <li><a href="#contato">📑 <strong>Contato</strong></a></li>
 </ol>
-
-
-
 
 # introducao
 
@@ -462,3 +459,4 @@ Não retorna nada, apenas o código __204__ em caso de sucesso.
 Em caso de dúvidas ou mesmo para demonstrar o funcionamento do código, pode entrar em contato comigo através do linkedin abaixo:
 
 [Linkedin-Marcelo](https://www.linkedin.com/in/marcelohorikoshi/)
+[Github-Marcelo](https://github.com/MarceloHorikoshi/msx-veiculos/tree/main)
