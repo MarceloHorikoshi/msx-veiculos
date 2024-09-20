@@ -1,0 +1,47 @@
+# banco de dados
+sqlalchemy==2.0.35
+pymysql==1.1.1
+
+# criptografia
+bcrypt==4.2.0
+passlib==1.7.4
+python-jose==3.3.0
+cryptography==43.0.1
+
+# dataframe
+openpyxl==3.1.5
+pandas==2.2.2
+
+# FastAPI
+fastapi==0.115.0
+pydantic==2.9.2
+starlette==0.38.5
+uvicorn==0.30.6
+
+# hora local
+pytz==2024.2
+
+# requisicoes
+python-multipart==0.0.9
+requests==2.32.3
+
+# textos
+unidecode==1.3.8
+
+# variaveis de ambiente local
+python-dotenv==1.0.1
+
+
+################################TESTES########################################
+
+# testes api
+httpx==0.27.2
+pytest==8.3.3
+pytest-html==4.1.1 # pytest tests --html="HTMLPytestReport.html"
+pytest-mock==3.14.0
+pytest-asyncio==0.24.0
+mysqlclient
+
+# cobertura de testes:
+coverage==7.6.1 # coverage run -m pytest
+pytest-cov==5.0.0 # coverage html
