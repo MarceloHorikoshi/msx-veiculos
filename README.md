@@ -18,7 +18,7 @@
       <li><a href="#veiculo">3.3 <strong>Veiculos</strong></a></li>
     </ul>
   </li>
-  <li><a href="#contato">📑 <strong>Contato</strong></a></li>
+  <li><a href="#contato"><strong>Contato</strong></a></li>
 </ol>
 
 # introducao
