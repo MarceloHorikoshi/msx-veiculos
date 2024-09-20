@@ -10,6 +10,7 @@
   <li><a href="#introducao"><strong>Introdução</strong></a></li>
   <li><a href="#como usar"><strong>Como Usar</strong></a></li>
   <li><a href="#como-instalar-na-sua-maquina"><strong>Como instalar na sua máquina</strong></a></li>
+<li><a href="#criando-container-no-docker"><strong>Criando container no docker</strong></a></li>
   <li>
     <a href="#endpoints"><strong>Endpoints</strong></a>
     <ul>
@@ -67,6 +68,40 @@ uvicorn main:app --reload
 
 Para acessar os **Endpoints** da sua máquina local, por padrão o endereço é este http://127.0.0.1:8000/
 e basta acrescer '/nome do endpoint'
+
+# criando container no docker
+
+Para executar o projeto utilizando o docker, será necessário a instalação do mesmo na máquina.
+Deixei disponível o Dockerfile pronto para instalação, basta seguir alguns passos:
+
+1.  Apos clonar o projeto, abrir um terminal na pasta raiz;
+2. Certificar que o Docker já esta sendo executado em sua máquina.
+3. Criar uma imagem do projeto utilizando o comando:
+```bash
+docker build -t msx-veiculos:latest .
+```
+4. Criar e executar um container a partir do comando:
+```bash
+docker run -it --rm --name=msx-veiculos -p 9000:9000 --env-file .env msx-veiculos:latest
+```
+
+Depois deste ultimo passo, basta aguardar a execução da aplicação, lembrando que pode ser necessário criar 
+um arquivo .env para poder executar, ou colocar manualmente as variaveis de ambiente.
+
+Existe também a opção do docker-compose, que acaba facilitando a criação e integração de um banco Mysql.
+Deixei um arquivo docker-compose.yml de base para poder realizar a construção deste ambiente composto no docker.
+Basta seguir o passo a passo:
+
+1.  Apos clonar o projeto, abrir um terminal na pasta raiz;
+2. Certificar que o Docker já esta sendo executado em sua máquina.
+3. Criar um ambiente para execução do projeto a partir deste comando:
+```bash
+docker  docker-compose up --build
+```
+
+Após o termino da construção, basta acessar os endpoints, caso queira usar meu arquivo docker-compose 
+sem alteração a porta será 9000, então será necessário alterar para __http://127.0.0.1:9000__ 
+em caso de execução local.
 
 # endpoints
 
